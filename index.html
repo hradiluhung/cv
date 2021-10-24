@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- ANIMATE.CSS BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- MY OWN STYLESHEET -->
+    <link rel="stylesheet" href="index.css">
+
+    <!--Website Icon-->
+    <link rel = "icon" href ="img/webIcon.png" type = "image/x-icon">
+
+    <title>CV of Adi</title>
+  </head>
+  <body>
+    <div id="navbar">
+      <ul>
+        <li><a href="#">/ home</a></li>
+        <li><a href="#tentang">/ tentang</a></li>
+        <li><a href="#pengalaman">/ pengalaman</a></li>
+        <li><a href="#portofolio">/ portofolio</a></li>
+        <ul id="logoIcon">
+          <li class="logoIcon">
+            <a href="https://www.linkedin.com/in/hradiluhung/"><img src="img/linkedinLogo.png" alt="Logo Linkedin" width="30px"> </a>
+          </li>
+          <li class="logoIcon">
+            <a href="https://github.com/hradiluhung"><img src="img/githubLogo.png" alt="Logo Github" width="30px"> </a>
+          </li>
+        </ul>
+      </ul>
+    </div>
+
+    <div id="home" class="container">
+      <img class="rounded-circle mt-5" src="img/introImg.gif" alt="Intro Image" width="150px" height="150px">
+      <h1 class="mt-4 fw-bold"><span class="greyText">hai,</span> adi <span class="greyText">di sini.</span><span class="lineText">.</span></h1>
+      <h2 class="animate__animated animate__fadeInUp fw-bold">selalu tertarik dengan hal baru.</h2>
+
+      <p class="intro animate__animated animate__fadeInUp mt-3">Saya adalah seorang mahasiswa yang tertarik pada desain grafis dan pengambangan website.</p>
+    </div><!--home-->
+
+    <div id="tentang" class="container animate__animated animate__fadeInUp clearFix">
+      <h2 class="subHeader mt-4 fw-bold">/tentang saya</h2>
+      <div id="textContainer" class="mt-4">
+        <div class="textTentang">
+          Saat ini saya sedang belajar di Jurusan Informatika Universitas Jenderal Soedirman dan sedang fokus mempelajari tentang front-end development.<br><br>
+          Disamping itu, saya kerap terjun ke bidang desain grafis baik dalam lingkup organisasi dan kepanitiaan maupun freelancing<br><br>
+
+          Berikut adalah beberapa skill/teknologi yang sudah saya terjuni :
+          <ul class="skillList mt-3">
+            <li><span>Adobe Illustrator</span></li>
+            <li><span>Figma</span></li>
+            <li><span>C++</span></li>
+            <li><span>Java</span></li>
+            <li><span>HTML & CSS</span></li>
+          </ul>
+        </div>
+        <img class="profilePhoto rounded" src="img/fotoAdi.jpg" alt="Foto Adi" width="250px">
+      </div>
+    </div><!--tentang-->
+
+    <div id="pengalaman" class="container animate__animated animate__fadeInUp">
+      <h2 class="subHeader mt-4 fw-bold">/pengalaman</h2>
+      <div class="pengalamanContainer mt-4">
+        <div class="row">
+          <div class="col-3">
+            <div class="list-group" id="list-tab" role="tablist">
+              <a class="tabPengalaman list-group-item list-group-item-action active" id="list-organisasi-list" data-bs-toggle="list" href="#list-organisasi" role="tab" aria-controls="list-organisasi">Organisasi</a>
+              <a class="tabPengalaman list-group-item list-group-item-action" id="list-pendidikan-list" data-bs-toggle="list" href="#list-pendidikan" role="tab" aria-controls="list-pendidikan">Pendidikan</a>
+              <a class="tabPengalaman list-group-item list-group-item-action" id="list-prestasi-list" data-bs-toggle="list" href="#list-prestasi" role="tab" aria-controls="list-prestasi">Prestasi</a>
+            </div>
+          </div>
+          <div class="col-7">
+            <div class="tabContentPengalaman tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="list-organisasi" role="tabpanel" aria-labelledby="list-organisasi-list">
+                <div class="listPengalaman row">
+                  <div class="jabatan col-4">Sekretaris Umum</div>
+                  <div class="col-7">UKM Seni dan Olahraga Unsoed 2021</div>
+                </div>
+                <div class="listPengalaman row">
+                  <div class="jabatan col-4">Staff Divisi</div>
+                  <div class="col-7">Medkominfo HMIF Unsoed 2021</div>
+                </div>
+                <div class="listPengalaman row">
+                  <div class="jabatan col-4">Sekretaris</div>
+                  <div class="col-7">Bapak Pengasuh PM Darussalam Gontor 2018</div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="list-pendidikan" role="tabpanel" aria-labelledby="list-pendidikan-list">
+                <div class="listPengalaman row">
+                  <div class="jabatan col-4">2020 - Sekarang</div>
+                  <div class="col-7">S1 Informatika, Universitas Jenderal Soedirman, Purbalingga</div>
+                </div>
+                <div class="listPengalaman row">
+                  <div class="jabatan col-4">2013 - 2018</div>
+                  <div class="col-7">Pondok Modern Darussalam Gontor, Ponorogo</div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="list-prestasi" role="tabpanel" aria-labelledby="list-prestasi-list">
+                <div class="listPengalaman row">
+                  <div class="jabatan col-4">2020</div>
+                  <div class="col-7">Juara 3 Lomba Edit Vector Ultah Gubernur Kalimantan Timur</div>
+                </div>
+                <div class="listPengalaman row">
+                  <div class="jabatan col-4">2016</div>
+                  <div class="col-7">Mendapatkan beasiswa bebas SPP 1 Semester</div>
+                </div>
+                <div class="listPengalaman row">
+                  <div class="jabatan col-4">2016</div>
+                  <div class="col-7">Mendapatkan program akselerasi dari PM Darussalam Gontor</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--pengalaman-->
+
+    <div id="portofolio" class="container animate__animated animate__fadeInUp">
+      <h2 class="subHeader mt-4 fw-bold">/portofolio</h2>
+      <div class="portofolioContent mt-4">
+        <div class="row">
+          <div class="portofolioCard card" style="width: 16rem;">
+            <img src="img/portofolio/Logo1.png" class="imgPortofolio card-img-top" alt="Logo 1">
+            <div class="card-body">
+              <p class="card-text">Logo Kabinet Gemintang HMIF Unsoed 2021.</p>
+            </div>
+            <a class="redirectLink" href="img/portofolio/Logo1.png"><img src="img/redirect.png" width="20px;"></a>
+          </div>
+
+          <div class="portofolioCard card" style="width: 16rem;">
+            <img src="img/portofolio/Logo2.png" class="imgPortofolio card-img-top" alt="Logo 2">
+            <div class="card-body">
+              <p class="card-text">Logo Angkatan 2020 Jurusan Informatika Unsoed.</p>
+            </div>
+            <a class="redirectLink" href="img/portofolio/Logo2.png"><img src="img/redirect.png" width="20px;"></a>
+          </div>
+
+          <div class="portofolioCard card" style="width: 16rem;">
+            <img src="img/portofolio/Logo3.png" class="imgPortofolio card-img-top" alt="Logo 3">
+            <div class="card-body">
+              <p class="card-text">Ajuan Logo LPM Rekursif Fakultas Teknik Unsoed.</p>
+            </div>
+            <a class="redirectLink" href="img/portofolio/Logo3.png"><img src="img/redirect.png" width="20px;"></a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="portofolioCard card" style="width: 16rem;">
+            <img src="img/portofolio/Pamflet1.png" class="imgPortofolio card-img-top" alt="Pamflet 1">
+            <div class="card-body">
+              <p class="card-text">Pamflet Acara Pelatihan Desain HMIF Unsoed.</p>
+            </div>
+            <a class="redirectLink" href="img/portofolio/Pamflet1.jpg"><img src="img/redirect.png" width="20px;"></a>
+          </div>
+
+          <div class="portofolioCard card" style="width: 16rem;">
+            <img src="img/portofolio/Pamflet2.png" class="imgPortofolio card-img-top" alt="Pamflet 2">
+            <div class="card-body">
+              <p class="card-text">Pamflet Open Recruitment Volunteer Informatika Mengajar HMIF Unsoed.</p>
+            </div>
+            <a class="redirectLink" href="img/portofolio/Pamflet2.jpg"><img src="img/redirect.png" width="20px;"></a>
+          </div>
+
+          <div class="portofolioCard card" style="width: 16rem;">
+            <img src="img/portofolio/Pamflet3.png" class="imgPortofolio card-img-top" alt="Logo 3">
+            <div class="card-body">
+              <p class="card-text">Sertfikat Pelatihan Desain HMIF Unsoed.</p>
+            </div>
+            <a class="redirectLink" href="img/portofolio/Sertfikat1.jpg"><img src="img/redirect.png" width="20px;"></a>
+          </div>
+        </div>
+      </div>
+    </div> <!--portofolio-->
+
+
+
+
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

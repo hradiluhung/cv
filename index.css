@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body{
+  background: #0a192f;
+  color: #e87bf9;
+  font-family: 'poppins', sans-serif;
+}
+
+.container{
+  width:70%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+h1{
+  font-size: 60px;
+}
+
+h2{
+  font-size: 30px;
+  color: #8791af;
+}
+
+@keyframes blink {
+  0%{opacity: 1}
+  50%{opacity: 0}
+  100%{opacity: 1}
+}
+
+.lineText{
+  margin-left: 10px;
+  width: 4px;
+  background: #e87bf9;
+  position: absolute;
+  color: rgb(0,0,0,0);
+  animation: blink 1s linear infinite; ;
+}
+
+.greyText{
+  color: #ccd6f6;
+}
+
+.intro{
+  color: #8791af;
+  width: 600px;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+#navbar{
+  position: fixed;
+  text-align: right;
+  bottom: 50px;
+  right: 75px;
+}
+
+#navbar ul{
+  list-style-type: none;
+}
+
+#navbar ul li a{
+  color: #e87bf9;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+#navbar ul li a:hover{
+  color: #ccd6f6;
+}
+
+#logoIcon{
+  margin-top: 40px;
+}
+
+.logoIcon{
+  display: inline;
+  margin-left: 10px;
+}
+
+#tentang{
+  margin-top: 250px;
+  margin-bottom: 200px;
+}
+
+.subHeader:after{
+  display: inline-block;
+  position: relative;
+  opacity: 0.7;
+  top: 20px;
+  content: "-";
+  margin-left: 10px;
+  color : rgb(0,0,0,0);
+  background: #8791af;
+  width: 300px;
+  height: 1px;
+}
+
+.clearFix:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#tentang h2{
+  color: #ccd6f6;
+}
+
+.textTentang{
+  color: #8791af;
+
+  width: 600px;
+  font-size: 16px;
+  float: left;
+}
+
+.skillList{
+  columns: 2;
+  width: 400px;
+}
+
+ul.skillList li{
+  list-style-type: none;
+  color: #e87bf9;
+}
+
+ul.skillList li:before{
+  content:"";
+  background-image: url("img/list.png");
+  background-size: 10px 10px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-top: 7px;
+  margin-right: 10px;
+}
+
+ul.skillList span{
+  color: #8791af;
+}
+
+.profilePhoto{
+  float: left;
+  margin-left: 120px;
+  border: 1.5px solid #e87bf9;
+}
+
+#pengalaman{
+  margin-top: 200px;
+  margin-bottom: 200px;
+  clear: both;
+}
+
+#pengalaman h2{
+  color: #ccd6f6;
+}
+
+.tabPengalaman{
+  background: #0a192f;
+  color: #8791af;
+  height: 50px;
+  line-height: 35px;
+}
+
+.tabPengalaman:hover{
+  background: #0a192f;
+  color: #8791af;
+  border-right: 1.5px solid #e87bf9;
+}
+
+.tabPengalaman:active{
+  background: rgb(232,123,249, 0.2);
+  color: rgb(232,123,249);
+}
+
+.tabPengalaman.active{
+  background: #0a192f;
+  color: #ccd6f6;
+  border: none;
+  border-right: 1.5px solid #e87bf9;
+}
+
+.tabContentPengalaman{
+  position: absolute;
+  margin-left: 30px;
+  margin-top: -5px;
+}
+
+.list-group{
+  border-radius: 0px;
+  box-sizing: border-box;
+}
+
+.listPengalaman{
+  color: #8791af;
+  margin: 15px 0;
+}
+
+.jabatan{
+  color: #ccd6f6;
+}
+
+.listPengalaman:before{
+  content:"";
+  background-image: url("img/list.png");
+  background-size: 10px 10px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-top: 7px;
+}
+
+#portofolio{
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+#portofolio h2{
+  color: #ccd6f6;
+}
+
+.portofolioCard {
+  margin: 7px 5px;
+  background: #10213e;
+  color: #8791af;
+  border-radius: 20px;
+  border: 0.5px solid #8791af;
+}
+
+.portofolioCard:hover{
+  background: #223351;
+  position: relative;
+  top: -5px;
+}
+
+.imgPortofolio{
+  padding-top: 13px;
+}
+
+.card-text{
+  padding: 20px 0;
+  margin-top: -10px;
+}
+
+.redirectLink{
+  position: relative;
+  bottom: 10px;
+  left: 200px;
+  margin-bottom: 20px;
+}
+
+.lihatFull a{
+  color: #0a192f;
+  text-decoration: none;
+}
