@@ -2,7 +2,7 @@ const nama = document.querySelector("#name-input .input-field");
 const email = document.querySelector("#email-input .input-field");
 const password = document.querySelector("#password-input .input-field");
 const confirmPassword = document.querySelector("#password-confirm-input .input-field");
-const daftarBtn = document.getElementById("daftar-btn");
+const submitBtn = document.getElementById("submit-btn");
 
 function changeLine(fromInput, toInput){
   fromInput.addEventListener("keypress", function onEvent(event) {
