@@ -34,8 +34,8 @@ let kosong = [];
 let printAlert = "";
 
 submitBtn.addEventListener("click", function(event){
-  event.preventDefault();
   if(nama.value == "" || email.value == "" || password.value == "" || confirmPassword.value == ""){
+    event.preventDefault();
     printAlert = "";
     kosong = [];
     for(let i = 0 ; i < inputData.length; i++){
@@ -53,6 +53,7 @@ submitBtn.addEventListener("click", function(event){
     alert(printAlert + "must be inputted");
     return false;
   }else if(agreementCheck.checked == false){
+    event.preventDefault();
     printAlert = "";
     kosong = [];
     if(inputData[4][0].checked == false){
