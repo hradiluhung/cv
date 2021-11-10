@@ -34,12 +34,12 @@ let kosong = [];
 let printAlert = "";
 
 submitBtn.addEventListener("click", function(event){
-  if(nama.value == "" || email.value == "" || password.value == "" || confirmPassword.value == "" || agreementCheck.checked == false){
-    event.preventDefault();
+  event.preventDefault();
+  if(nama.value == "" || email.value == "" || password.value == "" || confirmPassword.value == ""){
     printAlert = "";
     kosong = [];
     for(let i = 0 ; i < inputData.length; i++){
-      if(inputData[i][0].value=="" || inputData[i][0].checked == false){
+      if(inputData[i][0].value==""){
         kosong.push(inputData[i][1]);
       }
     }
@@ -51,6 +51,14 @@ submitBtn.addEventListener("click", function(event){
       }
     }
     alert(printAlert + "must be inputted");
+    return false;
+  }else if(agreementCheck.checked == false){
+    printAlert = "";
+    kosong = [];
+    if(inputData[4][0].checked == false){
+      kosong.push(inputData[4][1]);
+    }
+    alert(inputData[4][1] + "must be inputted");
     return false;
   }else{
     return true;
